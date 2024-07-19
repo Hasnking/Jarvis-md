@@ -14,7 +14,7 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? "./database.db" : 
 module.exports = {
   BAN_CHATS: process.env.BAN_CHATS || ".",
   PORT: toBool(process.env.PORT) || 8000,
-  AUDIO_DATA: process.env.AUDIO_DATA || 'ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://i.imgur.com/ep3UbBP.jpg',
+  AUDIO_DATA: process.env.AUDIO_DATA || 'prince;x;https://i.imgur.com/BML7OMA.jpeg',
   WARN_COUNT: process.env.WARN_COUNT || '0',
   ALIVE_DATA : process.env.ALIVE_DATA || "_*Hy &sender i am alive now*_\n\n_PLATFORM: &platform_\n_RUNTIME : &runtime_\n\n_. type alive to update your alive message_",
   SESSION_ID: process.env.SESSION_ID || 'Jarvis_59a9_96c1_6d58_7240_2ff6_2493_c8a2_92bf',
@@ -38,12 +38,12 @@ module.exports = {
   ERROR_MSG: toBool(process.env.ERROR_MSG) || true,
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi &mention Welcome to &gname",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi $mention It was Nice Seeing you",
-  MEDIA_DATA: process.env.MEDIA_DATA|| 'ʟɪꜱᴛ ᴍᴇɴᴜ;ᴊᴀʀᴠɪꜱ-ᴍᴅ;https://i.imgur.com/ltPPMTh.jpeg',
+  MEDIA_DATA: process.env.MEDIA_DATA|| 'prince;x;https://i.imgur.com/BML7OMA.jpeg',
   MENU_FONT: process.env.MENU_FONT || "0;0",
   SUDO: process.env.SUDO || '923168598809,923168598809',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || '',
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || '',
-  BOT_INFO: process.env.BOT_INFO || 'princ3;https://i.imgur.com/VIpl3q5.mp4',
+  BOT_INFO: process.env.BOT_INFO || 'princ3;https://i.imgur.com/BML7OMA.jpeg',
   WORK_TYPE: process.env.WORK_TYPE || 'public',
   DATABASE: DATABASE_URL === "./database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: "postgres", ssl: true, protocol: "postgres", dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
 };
